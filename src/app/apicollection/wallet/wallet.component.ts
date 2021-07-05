@@ -4,6 +4,7 @@ import { StratisfullnodeService } from '../../_service/stratisfullnode/stratisfu
 import { WalletBalance } from '../../_model/walletbalance';
 import { WalletSplitCoin } from '../../_model/walletsplitcoins';
 import { HttpParams } from '@angular/common/http';
+import Swal from 'sweetalert2';
 //import Swal from 'sweetalert2';
 
 @Component({
@@ -34,10 +35,10 @@ export class WalletComponent implements OnInit {
       if (response.ok) {
         this.isConnected = true;
       //  console.log(response);
-      //  alert('Load Successfully')
+        Swal.fire('Successful', 'Full Node Connection successful', 'info');
       } else {
-       // Swal.fire('Oops...', 'Something went wrong!, Please contact your administrator', 'error');
-        alert('Oops...');
+       Swal.fire('Oops...', 'Something went wrong!, Please contact your administrator', 'error');
+        //alert('Oops...');
         (error: any) => {
           console.log(error);
         }
@@ -79,10 +80,7 @@ export class WalletComponent implements OnInit {
     });
   }
 
-  // Choose city using select dropdown
-  //changeCity(e) {
-  //  this.walletbalance.includebalancebyaddress.setValue(e.target.value, {
-  //    onlySelf: true
-  //  })
-  //}
+  simpleAlert() {
+
+  }
 }

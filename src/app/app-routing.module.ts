@@ -7,7 +7,8 @@ import { SmartcontractComponent } from './apicollection/smartcontract/smartcontr
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
+  //{ path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: '', component: WalletComponent, pathMatch: 'full' },
   { path: 'wallet', component: WalletComponent },
   { path: 'smartcontractwallet', component: SmartcontractwalletComponent },
   { path: 'smartcontract', component: SmartcontractComponent },
