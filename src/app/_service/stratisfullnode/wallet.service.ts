@@ -4,7 +4,7 @@ import { ROOT_URL } from '../../_model/config';
 @Injectable({
   providedIn: 'root'
 })
-export class StratisfullnodeService {
+export class WalletService {
 
   constructor(private http: HttpClient) { }
 

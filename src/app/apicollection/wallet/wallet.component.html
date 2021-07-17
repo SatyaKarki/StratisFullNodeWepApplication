@@ -13,16 +13,10 @@
     </div>
   </div><!-- /.container-fluid -->
 </section>
-
-
-
-
 <!-- Main content -->
 <section class="content">
   <div class="container-fluid">
-    <!--<form (ngSubmit)="walletLoadForm.form.valid && OnSubmit()" #walletLoadForm="ngForm">-->
-    <form (ngSubmit)="walletLoadForm.form.valid && LoadWallet()" #walletLoadForm="ngForm">
-      <!-- SELECT2 EXAMPLE -->
+     <form (ngSubmit)="walletLoadForm.form.valid && LoadWallet()" #walletLoadForm="ngForm">     
       <div class="card card-primary card-outline">
         <div class="card-header">
           <h3 class="card-title">Wallet Load</h3>
@@ -53,7 +47,6 @@
             </div>
 
             <div class="col-sm-2">
-
               <button type="submit" class="btn btn-primary"><i class="fa fa-lock"></i> Load Wallet</button>
             </div>
             <!-- /.col -->
@@ -64,11 +57,8 @@
         </div>
         <!-- /.card-body -->
       </div>
-
     </form>
-
     <!--Wallet Balance-->
-
     <form (ngSubmit)="walletBalanceForm.form.valid && WalletBalance()" #walletBalanceForm="ngForm">
       <!-- SELECT2 EXAMPLE -->
       <div class="card card-primary card-outline">
@@ -107,7 +97,6 @@
             </div>
           </div>
           <div>
-
 
           </div>
           <div class="row">
@@ -149,22 +138,16 @@
             <!-- /.card-header -->
             <h3 class="card-title">List of Addresses</h3>
             <div *ngFor="let balance of walletbalances">
-
               <div *ngFor="let add of balance.addresses">
                 <span><span class="badge">Address:</span>  {{add.address}}</span>
                 <span><span class="badge">IsUsed:</span>  {{add.isUsed}}</span>
                 <span><span class="badge">IsChange:</span>  {{add.isChange}}</span>
-
                 <span><span class="badge">Amount Confirmed:</span>  {{add.amountConfirmed}}</span>
                 <span><span class="badge">Amount Unconfirmed:</span>  {{add.amountUnconfirmed}}</span>
-
-                <!--<span>Amount Confirmed: {{add.amountConfirmed}}</span>
-               <span>Amount Unconfirmed: {{add.amountUnconfirmed}}</span>-->
               </div>
 
             </div>
           </div>
-
         </div>
         <!-- /.card-body -->
       </div>
@@ -172,7 +155,6 @@
     </form>
 
     <!--Wallet Split Coins-->
-
     <form (ngSubmit)="walletSplitCoinForm.form.valid && WalletAplitCoins()" #walletSplitCoinForm="ngForm">
       <!-- SELECT2 EXAMPLE -->
       <div class="card card-primary card-outline">
@@ -233,7 +215,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-4">
               <button type="submit" class="btn btn-primary"><i class="fa fa-lock"></i> Wallet Split Coins</button>
@@ -244,8 +225,6 @@
         </div>
         <!-- /.card-body -->
       </div>
-
-
 
       <div *ngIf="walletSplitedCoins" class="card card-primary">
         <!-- /.card-header -->     
@@ -274,9 +253,6 @@
         </div>
       </div>
       <!-- /.card -->
-
     </form>
-
-
   </div>
 </section>

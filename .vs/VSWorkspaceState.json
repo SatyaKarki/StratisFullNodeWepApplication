@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\apicollection",
+    "\\src\\app\\apicollection\\wallet",
+    "\\src\\app\\mastertheme",
+    "\\src\\app\\mastertheme\\asidenav",
+    "\\src\\app\\_guard",
+    "\\src\\app\\_model",
+    "\\src\\app\\_service"
+  ],
+  "SelectedNode": "\\src\\app\\_model",
+  "PreviewInSolutionExplorer": false
+}

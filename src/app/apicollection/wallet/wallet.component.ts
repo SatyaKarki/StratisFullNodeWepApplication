@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Login } from '../../_model/login';
-import { StratisfullnodeService } from '../../_service/stratisfullnode/stratisfullnode.service';
+import { WalletLoad } from '../../_model/walletload';
+import { WalletService } from '../../_service/stratisfullnode/wallet.service';
 import { WalletBalance } from '../../_model/walletbalance';
 import { WalletSplitCoin } from '../../_model/walletsplitcoins';
 import { HttpParams } from '@angular/common/http';
@@ -13,14 +13,14 @@ import Swal from 'sweetalert2';
   styleUrls: ['./wallet.component.scss']
 })
 export class WalletComponent implements OnInit {
-  public login: Login = new Login();
+  public login: WalletLoad = new WalletLoad();
   public walletbalance: WalletBalance = new WalletBalance();
   public walletSplitCoin: WalletSplitCoin = new WalletSplitCoin();
   isConnected: boolean = false;
   walletInfos: any;
   walletbalances: any;
   walletSplitedCoins: any;
-  constructor( private stratisFullNode: StratisfullnodeService ) { }
+  constructor( private stratisFullNode: WalletService ) { }
 
   IncludeBalanceByAddress: any = ['true', 'false']
 
