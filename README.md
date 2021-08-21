@@ -1,6 +1,6 @@
 # StratisFullNodeWebApp
 
-This projects demonstrate how integrate Stratis Blockchain api endpoints in the custom angular application.<br>
+This projects demonstrate how to integrate Stratis Blockchain api endpoints in the custom angular application.<br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
 
 ## Development server
